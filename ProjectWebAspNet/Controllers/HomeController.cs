@@ -17,7 +17,9 @@ namespace ProjectWebAspNet.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Salles Web MVC App from C# Course.";
+            ViewData["Developer"] = "Alesf Luiz";
+            ViewData["Email"] = "alesfluiz@gmail.com";
 
             return View();
         }
@@ -25,7 +27,7 @@ namespace ProjectWebAspNet.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
-
+            ViewData["Email"] = "alesfluiz@gmail.com.";
             return View();
         }
 
