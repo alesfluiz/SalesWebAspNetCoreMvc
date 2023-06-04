@@ -9,7 +9,7 @@ namespace ProjectWebAspNet.Data
 {
     public class ProjectWebAspNetContext : DbContext
     {
-        public ProjectWebAspNetContext (DbContextOptions<ProjectWebAspNetContext> options)
+        public ProjectWebAspNetContext(DbContextOptions<ProjectWebAspNetContext> options)
             : base(options)
         {
         }
@@ -17,7 +17,5 @@ namespace ProjectWebAspNet.Data
         public DbSet<Department> Department { get; set; }
         public DbSet<Seller> Seller { get; set; }
         public DbSet<SalesRecord> SalesRecord { get; set; }
-
-
     }
 }
