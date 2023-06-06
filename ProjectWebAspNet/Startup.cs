@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProjectWebAspNet.Data;
+using ProjectWebAspNet.Services;
 
 namespace ProjectWebAspNet
 {
@@ -41,6 +42,7 @@ namespace ProjectWebAspNet
                     builder.MigrationsAssembly("ProjectWebAspNet")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         
         }
 
