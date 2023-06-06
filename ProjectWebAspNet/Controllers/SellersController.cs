@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjectWebAspNet.Models;
 using ProjectWebAspNet.Services;
 using System;
 using System.Collections.Generic;
@@ -22,5 +23,16 @@ namespace ProjectWebAspNet.Controllers
             return View(list);
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Seller seller)
+        {
+            _sellerService.Insert(seller);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
