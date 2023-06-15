@@ -12,7 +12,6 @@ namespace ProjectWebAspNet.Services
     public class SellerService
     {
         private readonly ProjectWebAspNetContext _context;
-
         public SellerService(ProjectWebAspNetContext context)
         {
             _context = context;
